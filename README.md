@@ -88,7 +88,7 @@ Nota: è a discrezione dello studente come mostrare i dettagli del corso, nella 
 
 ```bash
 # 1. Clona il repository
-git clone https://github.com/danielemargiacchi/AngFitnessApp
+git clone https://github.com/danielemargiacchi/AngFitnessApp.git
 
 # 2. Nella directory del backend e avvia il server
 json-server --watch db.json -s ./images
