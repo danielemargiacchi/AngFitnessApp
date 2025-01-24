@@ -1,0 +1,69 @@
+<div class="background">
+    <div class="modal-content">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-field">
+                <label for="nomeCorso">Nome corso</label>
+                <input formControlName="nome" type="text">
+                @if (isNomeValid) {
+                <span class="warning-info">Inserisci il nome del corso</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="descrizione">Descrizione corso</label>
+                <input formControlName="descrizione" type="text" id="descrizione">
+                @if (isDescrizioneValid) {
+                <span class="warning-info">Inserisci la descrizione del corso</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="">Nome istruttore</label>
+                <input formControlName="istruttore" type="text">
+                @if (isIstruttoreValid) {
+                <span class="warning-info">Inserisci il nome dell'istruttore</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="durata">Durata</label>
+                <input formControlName="durata" type="number" id="durata">
+                @if (isDurataValid) {
+                <span class="warning-info">Inserisci la durata del corso</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="">Posti</label>
+                <input formControlName="capacitaMassima" type="number" id="number">
+                @if (isCapacitaMassimaValid) {
+                <span class="warning-info">Inserisci una capacità massima valida</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="iscritti">Iscritti</label>
+                <input formControlName="iscritti" type="number" id="iscritti">
+                @if (isIscrittiValid) {
+                <span class="warning-info">Inserisci un numero di iscritti (0 ad esempio)</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="image">Immagine del corso:</label>
+                <input formControlName="image" type="text" id="image">
+                @if (isImageValid) {
+                <span class="warning-info">Inserisci un URL per l'immagine valido</span>
+                }
+            </div>
+            <div class="btn-container">
+                <button type="button" class="btn btn-close" (click)="onClose()">Chiudi</button>
+                <button type="submit" class="btn btn-submit">Aggiungi</button>
+            </div>
+        </form>
+        @if (!isFormValid) {
+        <span class="warning-info">Form non valido</span>
+        }
+
+
+
+
+
+
+
+    </div>
+</div>

@@ -1,0 +1,94 @@
+.hero {
+    background-image: url('/hero-gym.jpg');
+    background-color: rgba(47, 47, 47, 0.497);
+    background-blend-mode: overlay;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-description {
+    font-weight: bold;
+    font-size: 5rem;
+    color: #a1f022;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    background-color: #a1f022;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+
+button {
+    background-color: transparent;
+    border: #a1f022 2px solid;
+    color: #a1f022;
+    padding: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #c9c9c965;
+}
+
+
+
+.preview-corsi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.corso-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    min-height: 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+button#scopriCorsi {
+    background-color: transparent;
+    border: #a1f022 2px solid;
+    color: #a1f022;
+    padding: 15px;
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+button#scopriCorsi:hover {
+    background-color: #a1f022;
+    color: #fff;
+}
+
+.scopri-corsi {
+    background-color: #ffffff;
+    margin-top: 0;
+}
+
+.scopri-corsi h2 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}

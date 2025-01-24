@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.col {
+    width: 100%;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: #a1f022;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-add:hover {
+    background-color: #8ed31f;
+}
+
+.col h2 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
+}
+
+ul li a {
+    font-size: 2rem;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    background-color: #a1f022;
+}
+
+
+#gestione-corsi {
+    padding-top: 20px;
+}

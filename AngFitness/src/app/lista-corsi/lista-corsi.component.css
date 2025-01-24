@@ -1,0 +1,46 @@
+.corsi-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10px;
+    gap: 30px;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.corso-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    min-height: 500px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    .corsi-container {
+        gap: 20px;
+        padding: 5px;
+    }
+
+    .corso-card {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .corsi-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .corso-card {
+        max-width: 100%;
+    }
+}

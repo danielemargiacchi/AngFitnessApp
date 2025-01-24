@@ -1,0 +1,152 @@
+{
+  "corsi": [
+    {
+      "id": "1",
+      "nome": "Yoga per Principianti",
+      "descrizione": "Un'introduzione rilassante allo yoga, per imparare le basi e migliorare la flessibilità.",
+      "durata": 40,
+      "istruttore": "Anna Rossi",
+      "capacitaMassima": 20,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/yoga.webp"
+    },
+    {
+      "id": "2",
+      "nome": "Pilates Avanzato",
+      "descrizione": "Lezioni avanzate di pilates per migliorare forza e stabilità.",
+      "durata": 60,
+      "istruttore": "Marco Bianchi",
+      "capacitaMassima": 15,
+      "iscritti": 1,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/pilates.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "AcquaGym Dinamico",
+      "descrizione": "Allenamento divertente in acqua per tonificare e bruciare calorie.",
+      "durata": 30,
+      "istruttore": "Giulia Verdi",
+      "capacitaMassima": 25,
+      "iscritti": 2,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/acquagym.png"
+    },
+    {
+      "id": "4",
+      "nome": "CrossFit Base",
+      "descrizione": "Sessioni di CrossFit per principianti che vogliono migliorare forza e resistenza.",
+      "durata": 45,
+      "istruttore": "Luca Neri",
+      "capacitaMassima": 12,
+      "iscritti": 1,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/crossfit.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Zumba Fitness",
+      "descrizione": "Allenati ballando con le energiche sessioni di Zumba.",
+      "durata": 55,
+      "istruttore": "Carmen Lopez",
+      "capacitaMassima": 30,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/zumba.jpg"
+    },
+    {
+      "id": "6",
+      "nome": "Spinning Avanzato",
+      "descrizione": "Corso di spinning ad alta intensità per chi cerca una sfida.",
+      "durata": 30,
+      "istruttore": "Davide Riva",
+      "capacitaMassima": 20,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/spinning.webp"
+    },
+    {
+      "id": "7",
+      "nome": "Functional Training",
+      "descrizione": "Allenamento funzionale per sviluppare forza e mobilità.",
+      "durata": 40,
+      "istruttore": "Sara Fontana",
+      "capacitaMassima": 16,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/training.jpg"
+    },
+    {
+      "id": "8",
+      "nome": "Tai Chi",
+      "descrizione": "Corso di Tai Chi per migliorare equilibrio e benessere mentale.",
+      "durata": 60,
+      "istruttore": "Chen Li",
+      "capacitaMassima": 18,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/taichi.png"
+    },
+    {
+      "id": "9",
+      "nome": "Kickboxing",
+      "descrizione": "Lezioni di kickboxing per aumentare la resistenza e imparare tecniche di autodifesa.",
+      "durata": 30,
+      "istruttore": "Fabio Conti",
+      "capacitaMassima": 14,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/kickboxing.jpg"
+    },
+    {
+      "id": "10",
+      "nome": "Stretching e Mobilità",
+      "descrizione": "Un corso per migliorare la mobilità articolare e il rilassamento muscolare.",
+      "durata": 45,
+      "istruttore": "Elena Bianchi",
+      "capacitaMassima": 20,
+      "iscritti": 0,
+      "disponibilita": true,
+      "image": "http://localhost:3000/images/stretching.jpeg"
+    }
+  ],
+  "prenotazioni": [
+    {
+      "id": "8d65",
+      "nome": "Mario",
+      "cognome": "Bianchi",
+      "email": "mariobianchi@gmail.com",
+      "telefono": 3336527863,
+      "corso": "AcquaGym Dinamico"
+    },
+    {
+      "id": "8464",
+      "nome": "Lucia",
+      "cognome": "Verdi",
+      "email": "luciaverdi@gmail.com",
+      "telefono": 3358765289,
+      "corso": "CrossFit Base"
+    },
+    {
+      "id": "1182",
+      "nome": "Davide",
+      "cognome": "Neri",
+      "email": "davideneri@gmail.com",
+      "telefono": 3478976602,
+      "corso": "AcquaGym Dinamico"
+    },
+    {
+      "id": "4d03",
+      "nome": "Benedetta",
+      "cognome": "Lugano",
+      "email": "benedettalugano@gmail.com",
+      "telefono": 3397862301,
+      "corso": "Pilates Avanzato"
+    }
+  ],
+  "autore": {
+    "firstname": "Daniele",
+    "lastname": "Margiacchi"
+  }
+}

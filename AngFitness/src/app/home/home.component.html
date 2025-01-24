@@ -1,0 +1,19 @@
+<div class="hero">
+    <div class="hero-description">
+        AngFitness
+    </div>
+    <div class="hero-cta">
+        <a href="#scopri-corsi">Corsi</a>
+        <button routerLink="/chi-siamo">Chi siamo</button>
+    </div>
+</div>
+<section id="scopri-corsi" class="scopri-corsi">
+
+    <h2>Scopri i nostri corsi</h2>
+    <div class="preview-corsi">
+        @for (corso of allCorsi(); track $index) {
+        <app-corso class="corso-card" [corso]="corso"></app-corso>
+        }
+    </div>
+    <button routerLink="/corsi" id="scopriCorsi">Scopri tutti i corsi</button>
+</section>

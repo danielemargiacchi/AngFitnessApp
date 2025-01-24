@@ -1,0 +1,28 @@
+@if (prenotazioni().length > 0) {
+
+<div class="table-container">
+    <table class="dark-table">
+        <thead>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>Corso</th>
+        </thead>
+        <tbody>
+
+            @for (prenotazione of prenotazioni(); track $index) {
+            <tr>
+                <td>{{prenotazione.nome}}</td>
+                <td>{{prenotazione.cognome}}</td>
+                <td>{{prenotazione.email}}</td>
+                <td>{{prenotazione.telefono}}</td>
+                <td>{{prenotazione.corso}}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+}@else {
+<p>Attualmente non ci sono prenotazioni</p>
+}

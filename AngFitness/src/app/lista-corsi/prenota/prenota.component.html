@@ -1,0 +1,44 @@
+<div class="background">
+    <div class="modal-content">
+        <h3>Prenota il corso {{corso().nome}}</h3>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input formControlName="nome" type="text">
+                @if (isNomeValid) {
+                <span class="warning-info">Nome non valido</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="cognome">Cognome</label>
+                <input formControlName="cognome" type="text" id="cognome">
+                @if (isCognomeValid) {
+                <span class="warning-info">Cognome non valido</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input formControlName="email" type="text">
+                @if (isEmailValid) {
+                <span class="warning-info">Email non valido</span>
+                }
+            </div>
+            <div class="form-field">
+                <label for="telefono">Telefono</label>
+                <input formControlName="telefono" type="number" id="telefono">
+                @if (isTelefonoValid) {
+                <span class="warning-info">Telefono non valido</span>
+                }
+            </div>
+
+            <div class="btn-container">
+                <button type="button" class="btn btn-close" (click)="onClose()">Chiudi</button>
+                <button type="submit" class="btn btn-submit">Prenota</button>
+            </div>
+        </form>
+
+        @if (!isFormValid) {
+        <span class="warning-info">Form non valido</span>
+        }
+    </div>
+</div>

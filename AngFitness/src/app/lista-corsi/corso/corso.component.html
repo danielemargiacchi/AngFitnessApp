@@ -1,0 +1,28 @@
+@if (isPrenotaCorso) {
+<app-prenota (closeModal)="onClosedModal()" [corso]="corso()"></app-prenota>
+}
+
+<div class="img-container">
+    <img src="{{corso().image}}" alt="">
+</div>
+<div class="info">
+
+    <h3>{{corso().nome}}</h3>
+    <p>{{corso().descrizione}}</p>
+    <p><span>Istruttore:</span> {{corso().istruttore}}</p>
+    <p><span>Posti:</span> {{corso().capacitaMassima}}</p>
+    <p><span>Durata:</span> {{corso().durata}} minuti</p>
+    @if (corso().disponibilita) {
+    <p>Disponibile</p>
+    }@else {
+    <p>Non disponibile</p>
+    }
+
+    @if (checkPath() === 'corsi' && corso().disponibilita) {
+    <button class="prenota-btn" (click)="onPrenotaCorso()">Prenota</button>
+    }@else if (checkPath() === 'amministrazione') {
+    <button class="elimina-btn" (click)="onDeleteCorso()">Elimina</button>
+    }
+
+
+</div>

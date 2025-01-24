@@ -1,0 +1,5 @@
+<div class="corsi-container">
+    @for (corso of corsi(); track $index) {
+    <app-corso class="corso-card" [corso]="corso"></app-corso>
+    }
+</div>

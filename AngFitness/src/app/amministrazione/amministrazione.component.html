@@ -1,0 +1,24 @@
+<h1>Amministrazione</h1>
+
+@if (isAddingCorso) {
+<app-new-corso (closeModal)="onClosedModal()"></app-new-corso>
+}
+<ul>
+    <li><a href="/amministrazione#gestione-corsi">Corsi</a></li>
+    <li><a href="/amministrazione#gestione-prenotazioni">Prenotazioni</a></li>
+</ul>
+<div class="container">
+
+
+    <div id="gestione-corsi" class="col">
+
+        <h2>Modifica corsi</h2>
+        <button class="btn btn-add" (click)="onAddCorso()">Aggiungi corso</button>
+        <app-lista-corsi></app-lista-corsi>
+    </div>
+    <div id="gestione-prenotazioni" class="col">
+
+        <h2>Prenotazioni</h2>
+        <app-lista-prenotazioni></app-lista-prenotazioni>
+    </div>
+</div>
